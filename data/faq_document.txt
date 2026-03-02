@@ -1,0 +1,103 @@
+HR SaaS Platform - Documentación de Preguntas Frecuentes
+
+===========================================
+SECCIÓN 1: POLÍTICAS DE ACCESO Y SEGURIDAD
+===========================================
+
+¿Cómo funciona el sistema de autenticación en la plataforma?
+Nuestro sistema utiliza autenticación multifactor (MFA) para garantizar la seguridad. Los usuarios deben proporcionar su correo electrónico corporativo y contraseña. Posteriormente, recibirán un código de verificación de 6 dígitos enviado a su dispositivo móvil registrado o aplicación de autenticación. Este código expira después de 5 minutos. Los administradores pueden habilitar o deshabilitar MFA para usuarios específicos desde el panel de configuración de seguridad.
+
+¿Qué hacer si olvido mi contraseña?
+Si olvidas tu contraseña, haz clic en "¿Olvidaste tu contraseña?" en la página de inicio de sesión. Ingresa tu correo electrónico corporativo y recibirás un enlace de restablecimiento válido por 24 horas. El enlace te dirigirá a una página donde podrás crear una nueva contraseña. La nueva contraseña debe tener al menos 12 caracteres, incluir mayúsculas, minúsculas, números y caracteres especiales. No puedes reutilizar ninguna de tus últimas 5 contraseñas.
+
+¿Cuántos intentos de inicio de sesión fallidos están permitidos?
+El sistema permite hasta 5 intentos de inicio de sesión fallidos dentro de un período de 15 minutos. Después del quinto intento fallido, la cuenta se bloqueará automáticamente durante 30 minutos. Si necesitas desbloquear una cuenta antes, contacta a tu administrador del sistema o al equipo de soporte técnico. Los administradores pueden desbloquear cuentas desde el panel de administración de usuarios.
+
+¿Cómo funcionan los permisos basados en roles?
+Nuestra plataforma implementa un sistema de control de acceso basado en roles (RBAC). Existen cinco roles principales: Super Administrador, Administrador de RRHH, Manager, Empleado y Auditor. Cada rol tiene permisos específicos. Por ejemplo, solo los Super Administradores y Administradores de RRHH pueden modificar datos de nómina, mientras que los Managers solo pueden ver información de empleados en sus equipos. Los Auditores tienen acceso de solo lectura a todos los datos para fines de cumplimiento.
+
+===========================================
+SECCIÓN 2: GESTIÓN DE EMPLEADOS
+===========================================
+
+¿Cómo agregar un nuevo empleado al sistema?
+Para agregar un nuevo empleado, los Administradores de RRHH deben navegar a "Empleados" > "Agregar Nuevo Empleado". Completa todos los campos obligatorios: nombre completo, correo electrónico corporativo, fecha de inicio, departamento, cargo, ubicación y tipo de contrato. También puedes cargar documentos como el contrato firmado y documentos de identidad. Una vez guardado, el sistema enviará automáticamente un correo de bienvenida al nuevo empleado con instrucciones para configurar su cuenta. El empleado recibirá credenciales temporales que deben cambiarse en el primer inicio de sesión.
+
+¿Cómo funciona el proceso de onboarding automático?
+Cuando se agrega un nuevo empleado, se activa automáticamente un flujo de onboarding personalizable. Este flujo incluye tareas como completar información personal, firmar políticas de la empresa, configurar información bancaria para nómina y completar módulos de capacitación obligatorios. Los Managers reciben notificaciones sobre el progreso del onboarding de sus nuevos reportes. Puedes personalizar las tareas de onboarding desde "Configuración" > "Flujos de Trabajo" > "Onboarding".
+
+¿Cómo actualizar la información de un empleado?
+Los empleados pueden actualizar cierta información personal directamente desde su perfil, como número de teléfono, dirección y contactos de emergencia. Sin embargo, datos críticos como salario, departamento y cargo solo pueden ser modificados por Administradores de RRHH o Managers autorizados. Cualquier cambio en datos críticos queda registrado en un log de auditoría con timestamp y usuario responsable del cambio.
+
+¿Cómo gestionar las bajas de empleados?
+Para procesar una baja, navega a "Empleados" > selecciona el empleado > "Acciones" > "Procesar Baja". Indica la fecha efectiva de baja, el motivo (renuncia, despido, fin de contrato, etc.) y cualquier nota adicional. El sistema iniciará automáticamente un checklist de offboarding que incluye: recuperación de equipos, revocación de accesos, cálculo de liquidación y programación de entrevista de salida. El empleado permanecerá en el sistema como "Inactivo" para fines de auditoría y reportes históricos.
+
+===========================================
+SECCIÓN 3: GESTIÓN DE TIEMPO Y ASISTENCIA
+===========================================
+
+¿Cómo registrar tiempo trabajado?
+Los empleados pueden registrar su tiempo de trabajo de múltiples formas: mediante la aplicación móvil con geolocalización, desde el portal web o usando dispositivos de reloj biométrico integrados. Para registrar entrada, haz clic en "Registrar Entrada" al comenzar tu jornada. Para registrar salida, haz clic en "Registrar Salida". El sistema calcula automáticamente las horas trabajadas, incluyendo horas extras si exceden la jornada estándar definida en tu contrato.
+
+¿Cómo solicitar días de vacaciones?
+Para solicitar vacaciones, ve a "Mi Tiempo" > "Solicitar Ausencia" > "Vacaciones". Selecciona las fechas de inicio y fin, y agrega cualquier comentario relevante. La solicitud se enviará automáticamente a tu Manager para aprobación. Puedes ver el estado de tu solicitud en "Mis Solicitudes". Los Managers reciben notificaciones por correo y en la plataforma. Una vez aprobadas, las vacaciones se reflejan automáticamente en el calendario del equipo y se descuentan de tu balance disponible.
+
+¿Cuántos días de vacaciones tengo disponibles?
+Puedes ver tu balance de vacaciones en "Mi Panel" > "Balance de Tiempo". El sistema muestra días acumulados, días utilizados y días pendientes. El acumulado se calcula automáticamente según tu antigüedad y política de la empresa. Por ejemplo, la política estándar otorga 15 días al año para empleados con menos de 3 años de antigüedad, 20 días para empleados entre 3-5 años y 25 días para empleados con más de 5 años.
+
+¿Cómo reportar una ausencia por enfermedad?
+Si estás enfermo y no puedes trabajar, debes reportarlo lo antes posible a través de "Mi Tiempo" > "Reportar Ausencia" > "Enfermedad". Selecciona la fecha y duración estimada. Si la ausencia supera 3 días consecutivos, deberás cargar un certificado médico dentro de las 48 horas posteriores a tu reincorporación. Tu Manager recibirá una notificación inmediata. Las ausencias por enfermedad no descuentan de tu balance de vacaciones, pero están limitadas según la legislación local y política de la empresa.
+
+¿Cómo funcionan las políticas de trabajo remoto?
+Las políticas de trabajo remoto varían según el departamento y rol. Los empleados elegibles pueden solicitar días de trabajo remoto a través de "Mi Tiempo" > "Solicitar Trabajo Remoto". Indica las fechas y motivo. La aprobación depende de tu Manager y las políticas departamentales. Algunos roles tienen aprobación automática para hasta 2 días por semana. Para acuerdos de trabajo remoto permanente o híbrido, debe existir un acuerdo formal firmado y cargado en tu perfil.
+
+===========================================
+SECCIÓN 4: NÓMINA Y COMPENSACIÓN
+===========================================
+
+¿Cuándo se procesan las nóminas?
+Las nóminas se procesan el último día hábil de cada mes. Los empleados reciben su recibo de pago electrónico en la plataforma bajo "Mis Documentos" > "Recibos de Pago". Los fondos se depositan en las cuentas bancarias registradas dentro de las 24-48 horas siguientes al procesamiento. Si el último día del mes cae en fin de semana o feriado, la nómina se procesa el día hábil anterior.
+
+¿Cómo actualizar mi información bancaria para nómina?
+Para actualizar tu información bancaria, ve a "Mi Perfil" > "Información de Pago". Proporciona el nombre del banco, número de cuenta y código de sucursal. Por seguridad, los cambios en información bancaria requieren aprobación del departamento de RRHH. Una vez aprobado, el cambio se aplicará a partir de la siguiente nómina. Te recomendamos hacer cambios antes del día 20 del mes para asegurar su aplicación en la nómina del mes corriente.
+
+¿Qué deducciones aparecen en mi recibo de pago?
+Tu recibo de pago incluye deducciones legales obligatorias como seguridad social, impuesto sobre la renta y sistema de pensiones. También se deducen contribuciones a seguros de salud corporativos si estás inscrito. Deducciones adicionales pueden incluir préstamos de empleado, anticipos de nómina o contribuciones voluntarias a planes de ahorro. Cada deducción está claramente identificada con su monto y descripción en tu recibo de pago.
+
+¿Cómo solicitar un anticipo de nómina?
+Los empleados con al menos 6 meses de antigüedad pueden solicitar anticipos de hasta el 40% de su salario mensual. Ve a "Nómina" > "Solicitar Anticipo". Indica el monto solicitado y motivo. La solicitud requiere aprobación de tu Manager y del departamento de Finanzas. Si es aprobada, el anticipo se deposita dentro de 2-3 días hábiles y se descuenta automáticamente de tu próxima nómina. Solo se permite un anticipo activo por empleado.
+
+¿Cómo funcionan los bonos y comisiones?
+Los bonos de desempeño se calculan trimestralmente basados en objetivos individuales y del equipo. Los Managers deben completar evaluaciones de desempeño antes del día 10 del primer mes de cada trimestre. Los bonos aprobados se pagan junto con la nómina del segundo mes del trimestre. Las comisiones para equipos de ventas se calculan mensualmente según los acuerdos comerciales cerrados y se pagan en la nómina del mes siguiente al cierre.
+
+===========================================
+SECCIÓN 5: EVALUACIÓN Y DESARROLLO
+===========================================
+
+¿Cómo funciona el proceso de evaluación de desempeño?
+Las evaluaciones de desempeño se realizan trimestralmente. Los Managers reciben notificaciones automáticas para iniciar el proceso. El proceso incluye autoevaluación del empleado, evaluación del Manager y calibración con el equipo de liderazgo. Los empleados pueden ver sus evaluaciones históricas en "Mi Desarrollo" > "Evaluaciones". Las evaluaciones consideran competencias técnicas, objetivos alcanzados y valores de la empresa.
+
+¿Cómo establecer objetivos SMART?
+Los objetivos deben establecerse al inicio de cada trimestre en colaboración con tu Manager. Ve a "Mi Desarrollo" > "Objetivos" > "Crear Objetivo". Asegúrate de que cada objetivo sea Específico, Medible, Alcanzable, Relevante y con Tiempo definido (SMART). Puedes agregar métricas y milestones para seguimiento. El sistema te recordará actualizar el progreso cada dos semanas. Los objetivos se revisan formalmente durante las evaluaciones trimestrales.
+
+¿Qué oportunidades de capacitación están disponibles?
+La plataforma ofrece un catálogo de más de 500 cursos en áreas como liderazgo, habilidades técnicas, compliance y desarrollo personal. Accede al catálogo en "Aprendizaje" > "Explorar Cursos". Algunos cursos son obligatorios según tu rol, mientras otros son opcionales. Puedes solicitar cursos externos a través de "Aprendizaje" > "Solicitar Capacitación Externa". La aprobación depende del presupuesto de desarrollo y relevancia para tu rol.
+
+¿Cómo funciona el plan de carrera?
+Cada empleado puede crear un plan de carrera personalizado trabajando con su Manager. Ve a "Mi Desarrollo" > "Plan de Carrera". Identifica tu rol objetivo, las competencias necesarias y las brechas actuales. El sistema sugerirá cursos, proyectos y experiencias para cerrar esas brechas. Los planes de carrera se revisan semestralmente durante sesiones de desarrollo con tu Manager.
+
+===========================================
+SECCIÓN 6: SOPORTE Y AYUDA
+===========================================
+
+¿Cómo contactar al soporte técnico?
+Para asistencia técnica, haz clic en el ícono de ayuda en la esquina inferior derecha de cualquier página. Puedes iniciar un chat en vivo con un agente (disponible de Lunes a Viernes, 8am-6pm) o enviar un ticket de soporte. Para problemas urgentes que afectan la operación, llama a la línea directa de soporte disponible 24/7. Todos los tickets reciben un número de seguimiento único.
+
+¿Qué es el SLA de tiempo de respuesta?
+Nuestro SLA garantiza respuesta inicial en 2 horas para tickets de prioridad alta, 8 horas para prioridad media y 24 horas para prioridad baja. La resolución depende de la complejidad, pero el 90% de tickets se resuelven en 48 horas. Puedes verificar el estado de tus tickets en "Soporte" > "Mis Tickets". Los administradores reciben reportes semanales de métricas de soporte.
+
+¿Dónde encontrar tutoriales y documentación?
+La documentación completa está disponible en "Ayuda" > "Centro de Conocimiento". Incluye guías paso a paso, videos tutoriales, preguntas frecuentes y mejores prácticas. El contenido está organizado por módulo y rol. También ofrecemos webinars mensuales gratuitos para nuevas funcionalidades. Las grabaciones se publican en el Centro de Conocimiento dentro de 48 horas.
+
+¿Cómo reportar un bug o sugerir una mejora?
+Para reportar bugs, usa "Ayuda" > "Reportar Problema". Proporciona una descripción detallada, pasos para reproducir y capturas de pantalla si es posible. Para sugerencias de mejora, usa "Ayuda" > "Sugerir Funcionalidad". Todas las sugerencias son revisadas mensualmente por el equipo de producto. Las más votadas por los usuarios se priorizan en el roadmap de desarrollo.

@@ -1,0 +1,104 @@
+[
+  {
+    "user_question": "¿Cómo reportar un bug?",
+    "system_answer": "Para reportar un bug, sigue estos pasos:\n\n1. Accede a la sección \"Ayuda\" en el sistema.\n2. Selecciona la opción \"Reportar Problema\".\n3. Proporciona una descripción detallada del bug.\n4. Incluye los pasos para reproducir el problema.\n5. Si es posible, adjunta capturas de pantalla que ayuden a ilustrar el problema.\n\nRecuerda que una descripción clara y completa facilitará la resolución del problema.",
+    "chunks_related": [
+      {
+        "chunk_id": 1,
+        "content": "¿Cómo reportar un bug o sugerir una mejora?\nPara reportar bugs, usa \"Ayuda\" > \"Reportar Problema\". Proporciona una descripción detallada, pasos para reproducir y capturas de pantalla si es posible. Para sugerencias de mejora, usa \"Ayuda\" > \"Sugerir Funcionalidad\". Todas las sugerencias son revisadas mensualmente por el equipo de producto. Las más votadas por los usuarios se priorizan en el roadmap de desarrollo.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 2,
+        "content": "¿Cómo reportar un bug o sugerir una mejora?\nPara reportar bugs, usa \"Ayuda\" > \"Reportar Problema\". Proporciona una descripción detallada, pasos para reproducir y capturas de pantalla si es posible. Para sugerencias de mejora, usa \"Ayuda\" > \"Sugerir Funcionalidad\". Todas las sugerencias son revisadas mensualmente por el equipo de producto. Las más votadas por los usuarios se priorizan en el roadmap de desarrollo.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 3,
+        "content": "¿Cómo reportar una ausencia por enfermedad?\nSi estás enfermo y no puedes trabajar, debes reportarlo lo antes posible a través de \"Mi Tiempo\" > \"Reportar Ausencia\" > \"Enfermedad\". Selecciona la fecha y duración estimada. Si la ausencia supera 3 días consecutivos, deberás cargar un certificado médico dentro de las 48 horas posteriores a tu reincorporación. Tu Manager recibirá una notificación inmediata. Las ausencias por enfermedad no descuentan de tu balance de vacaciones, pero están limitadas según la legislación local y política de la empresa.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 4,
+        "content": "¿Cómo reportar una ausencia por enfermedad?\nSi estás enfermo y no puedes trabajar, debes reportarlo lo antes posible a través de \"Mi Tiempo\" > \"Reportar Ausencia\" > \"Enfermedad\". Selecciona la fecha y duración estimada. Si la ausencia supera 3 días consecutivos, deberás cargar un certificado médico dentro de las 48 horas posteriores a tu reincorporación. Tu Manager recibirá una notificación inmediata. Las ausencias por enfermedad no descuentan de tu balance de vacaciones, pero están limitadas según la legislación local y política de la empresa.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      }
+    ]
+  },
+  {
+    "user_question": "¿Cómo contactar al soporte técnico?",
+    "system_answer": "Para contactar al soporte técnico, sigue estos pasos:\n\n1. **Haz clic en el ícono de ayuda**: Este ícono se encuentra en la esquina inferior derecha de cualquier página de la plataforma.\n   \n2. **Opciones de asistencia**:\n   - **Chat en vivo**: Puedes iniciar un chat en vivo con un agente, disponible de Lunes a Viernes, de 8am a 6pm.\n   - **Enviar un ticket de soporte**: Si prefieres, puedes enviar un ticket de soporte. Todos los tickets recibirán un número de seguimiento único.\n\n3. **Problemas urgentes**: Si enfrentas un problema urgente que afecta la operación, llama a la línea directa de soporte, que está disponible 24/7.\n\nSi necesitas más ayuda, no dudes en utilizar estas opciones.",
+    "chunks_related": [
+      {
+        "chunk_id": 1,
+        "content": "===========================================\nSECCIÓN 6: SOPORTE Y AYUDA\n===========================================\n\n¿Cómo contactar al soporte técnico?\nPara asistencia técnica, haz clic en el ícono de ayuda en la esquina inferior derecha de cualquier página. Puedes iniciar un chat en vivo con un agente (disponible de Lunes a Viernes, 8am-6pm) o enviar un ticket de soporte. Para problemas urgentes que afectan la operación, llama a la línea directa de soporte disponible 24/7. Todos los tickets reciben un número de seguimiento único.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 2,
+        "content": "===========================================\nSECCIÓN 6: SOPORTE Y AYUDA\n===========================================\n\n¿Cómo contactar al soporte técnico?\nPara asistencia técnica, haz clic en el ícono de ayuda en la esquina inferior derecha de cualquier página. Puedes iniciar un chat en vivo con un agente (disponible de Lunes a Viernes, 8am-6pm) o enviar un ticket de soporte. Para problemas urgentes que afectan la operación, llama a la línea directa de soporte disponible 24/7. Todos los tickets reciben un número de seguimiento único.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 3,
+        "content": "¿Cómo reportar un bug o sugerir una mejora?\nPara reportar bugs, usa \"Ayuda\" > \"Reportar Problema\". Proporciona una descripción detallada, pasos para reproducir y capturas de pantalla si es posible. Para sugerencias de mejora, usa \"Ayuda\" > \"Sugerir Funcionalidad\". Todas las sugerencias son revisadas mensualmente por el equipo de producto. Las más votadas por los usuarios se priorizan en el roadmap de desarrollo.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 4,
+        "content": "¿Cómo reportar un bug o sugerir una mejora?\nPara reportar bugs, usa \"Ayuda\" > \"Reportar Problema\". Proporciona una descripción detallada, pasos para reproducir y capturas de pantalla si es posible. Para sugerencias de mejora, usa \"Ayuda\" > \"Sugerir Funcionalidad\". Todas las sugerencias son revisadas mensualmente por el equipo de producto. Las más votadas por los usuarios se priorizan en el roadmap de desarrollo.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      }
+    ]
+  },
+  {
+    "user_question": "Como registro a un admin?",
+    "system_answer": "No encuentro esta información en la documentación disponible.",
+    "chunks_related": [
+      {
+        "chunk_id": 1,
+        "content": "===========================================\nSECCIÓN 2: GESTIÓN DE EMPLEADOS\n===========================================\n\n¿Cómo agregar un nuevo empleado al sistema?\nPara agregar un nuevo empleado, los Administradores de RRHH deben navegar a \"Empleados\" > \"Agregar Nuevo Empleado\". Completa todos los campos obligatorios: nombre completo, correo electrónico corporativo, fecha de inicio, departamento, cargo, ubicación y tipo de contrato. También puedes cargar documentos como el contrato firmado y documentos de identidad. Una vez guardado, el sistema enviará automáticamente un correo de bienvenida al nuevo empleado con instrucciones para configurar su cuenta. El empleado recibirá credenciales temporales que deben cambiarse en el primer inicio de sesión.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 2,
+        "content": "===========================================\nSECCIÓN 2: GESTIÓN DE EMPLEADOS\n===========================================\n\n¿Cómo agregar un nuevo empleado al sistema?\nPara agregar un nuevo empleado, los Administradores de RRHH deben navegar a \"Empleados\" > \"Agregar Nuevo Empleado\". Completa todos los campos obligatorios: nombre completo, correo electrónico corporativo, fecha de inicio, departamento, cargo, ubicación y tipo de contrato. También puedes cargar documentos como el contrato firmado y documentos de identidad. Una vez guardado, el sistema enviará automáticamente un correo de bienvenida al nuevo empleado con instrucciones para configurar su cuenta. El empleado recibirá credenciales temporales que deben cambiarse en el primer inicio de sesión.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 3,
+        "content": "===========================================\nSECCIÓN 3: GESTIÓN DE TIEMPO Y ASISTENCIA\n===========================================\n\n¿Cómo registrar tiempo trabajado?\nLos empleados pueden registrar su tiempo de trabajo de múltiples formas: mediante la aplicación móvil con geolocalización, desde el portal web o usando dispositivos de reloj biométrico integrados. Para registrar entrada, haz clic en \"Registrar Entrada\" al comenzar tu jornada. Para registrar salida, haz clic en \"Registrar Salida\". El sistema calcula automáticamente las horas trabajadas, incluyendo horas extras si exceden la jornada estándar definida en tu contrato.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      },
+      {
+        "chunk_id": 4,
+        "content": "===========================================\nSECCIÓN 3: GESTIÓN DE TIEMPO Y ASISTENCIA\n===========================================\n\n¿Cómo registrar tiempo trabajado?\nLos empleados pueden registrar su tiempo de trabajo de múltiples formas: mediante la aplicación móvil con geolocalización, desde el portal web o usando dispositivos de reloj biométrico integrados. Para registrar entrada, haz clic en \"Registrar Entrada\" al comenzar tu jornada. Para registrar salida, haz clic en \"Registrar Salida\". El sistema calcula automáticamente las horas trabajadas, incluyendo horas extras si exceden la jornada estándar definida en tu contrato.",
+        "metadata": {
+          "source": "data/faq_document.txt"
+        }
+      }
+    ]
+  }
+]

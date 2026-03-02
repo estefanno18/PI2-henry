@@ -1,0 +1,9 @@
+# Environment variables
+.env
+
+# IDE
+.vscode/
+
+# ChromaDB - Ignore database files but keep folder structure
+chroma_db/*
+!chroma_db/.gitkeep

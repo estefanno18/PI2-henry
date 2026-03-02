@@ -1,0 +1,24 @@
+# Dependencias del Proyecto RAG para FAQs
+# =========================================
+# Este archivo contiene todas las librerías necesarias para ejecutar el sistema
+
+# LangChain - Framework principal para RAG
+langchain==0.3.13
+langchain-community==0.3.13
+langchain-openai==0.2.14
+
+# ChromaDB - Base de datos vectorial
+chromadb==0.5.23
+
+# OpenAI - API para embeddings y LLM
+openai==1.59.5
+
+# Python-dotenv - Manejo de variables de entorno
+python-dotenv==1.0.1
+
+# Tiktoken - Tokenizador para modelos de OpenAI
+tiktoken==0.8.0
+
+# Otras dependencias útiles
+pydantic==2.10.5
+requests==2.32.3
