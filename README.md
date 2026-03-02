@@ -20,10 +20,10 @@ Sistema de Retrieval-Augmented Generation (RAG) que permite consultar documentac
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Uso](#-uso)
 - [Ejemplos de Consultas](#-ejemplos-de-consultas)
-- [Configuración Avanzada](#️-configuración-avanzada)
 - [Solución de Problemas](#-solución-de-problemas)
 - [Preguntas Frecuentes](#-preguntas-frecuentes)
 - [Decisiones técnicas](#-decisiones-tecnicas)
+
 ---
 
 ## � Quick Start
@@ -48,6 +48,7 @@ python3 src/query.py "¿Cómo solicitar vacaciones?"
 ## �📋 Descripción
 
 Este proyecto implementa un sistema RAG que:
+
 - 📄 Indexa documentación de preguntas frecuentes en una base de datos vectorial (ChromaDB)
 - 🔍 Permite realizar consultas en lenguaje natural
 - 🤖 Genera respuestas contextualizadas usando GPT-4o-mini
@@ -82,7 +83,7 @@ Este proyecto implementa un sistema RAG que:
 ### 1. Clonar el repositorio
 
 ```bash
-cd /ruta/a/tu/proyecto
+cd https://github.com/estefanno18/PI2-henry
 ```
 
 ### 2. Crear y activar entorno virtual (recomendado)
@@ -122,11 +123,6 @@ EMBEDDING_MODEL=text-embedding-3-small
 LLM_MODEL=gpt-4o-mini
 ```
 
-**⚠️ Importante**: 
-- Reemplaza `sk-your-openai-api-key-here` con tu API key real de OpenAI
-- Nunca compartas tu API key
-- Asegúrate de que `.env` esté en `.gitignore`
-
 ## 📂 Estructura del Proyecto
 
 ```
@@ -141,7 +137,6 @@ PI2/
 ├── chroma_db/                    # Base de datos vectorial (se genera)
 ├── requirements.txt              # Dependencias del proyecto
 ├── env.example                   # Plantilla de variables de entorno
-├── .env                          # Variables de entorno (crear)
 └── README.md                     # Este archivo
 ```
 
@@ -156,6 +151,7 @@ python3 src/build_index.py
 ```
 
 **Salida esperada:**
+
 ```
 📄 Cargando documento desde: data/faq_document.txt
 ✓ Documento cargado exitosamente
@@ -213,14 +209,15 @@ Ejemplo de salida JSON:
 }
 ```
 
-## � Ejemplos de Consultas
+## Ejemplos de Consultas
 
 El proyecto incluye ejemplos de consultas exitosas en `outputs/sample_queries.json`. Puedes revisar este archivo para ver:
+
 - Tipos de preguntas que el sistema puede responder
 - Formato esperado de las respuestas
 - Cómo se estructuran los chunks relacionados
 
-## �🔄 Reindexar Documentación
+## Reindexar Documentación
 
 Si actualizas el archivo `data/faq_document.txt`, simplemente vuelve a ejecutar:
 
@@ -230,73 +227,12 @@ python3 src/build_index.py
 
 El sistema eliminará automáticamente el índice anterior y creará uno nuevo.
 
-## ⚙️ Configuración Avanzada
-
-### Ajustar el número de chunks recuperados
-
-Más chunks = más contexto pero mayor costo. En `src/query.py`, línea ~88:
-
-```python
-retriever = vectorstore.as_retriever(
-    search_kwargs={"k": 4}  # Cambiar este número (recomendado: 2-6)
-)
-```
-
-**Recomendaciones**:
-- **k=2**: Respuestas rápidas y económicas, ideal para FAQs simples
-- **k=4**: Balance óptimo (configuración actual)
-- **k=6-8**: Para preguntas complejas que requieren más contexto
-
-### Modificar el tamaño de chunks
-
-Chunks más grandes = más contexto por chunk pero menos precisión. En `src/build_index.py`, línea ~43:
-
-```python
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=800,        # Tamaño de cada chunk (recomendado: 500-1500)
-    chunk_overlap=200,     # Overlap para mantener contexto (15-25% del chunk_size)
-    ...
-)
-```
-
-**Nota**: Si modificas estos valores, debes reindexar la base de datos.
-
-### Cambiar el modelo de LLM
-
-En tu archivo `.env`:
-
-```bash
-# Para mayor calidad (más costoso)
-LLM_MODEL=gpt-4
-
-# Para menor costo (actual)
-LLM_MODEL=gpt-4o-mini
-
-# Para balance
-LLM_MODEL=gpt-3.5-turbo
-```
-
-### Modificar la temperatura del modelo
-
-Controla la creatividad de las respuestas. En `src/query.py`:
-
-```python
-llm = ChatOpenAI(
-    model=llm_model,
-    temperature=0.3  # 0 = determinístico, 1 = creativo
-)
-```
-
-**Recomendaciones**:
-- **0.0-0.3**: Respuestas consistentes y factuales (recomendado para FAQs)
-- **0.4-0.7**: Más variación en las respuestas
-- **0.8-1.0**: Respuestas creativas (no recomendado para documentación)
-
 ## 🐛 Solución de Problemas
 
 ### Error: `ModuleNotFoundError`
 
 Instala las dependencias:
+
 ```bash
 pip3 install -r requirements.txt
 ```
@@ -304,6 +240,7 @@ pip3 install -r requirements.txt
 Asegúrate de estar en el entorno virtual correcto.
 
 **Nota**: Si ves errores con imports de LangChain (como `ModuleNotFoundError: No module named 'langchain.chains'`), asegúrate de tener las versiones correctas instaladas ejecutando:
+
 ```bash
 pip3 install --upgrade -r requirements.txt
 ```
@@ -311,6 +248,7 @@ pip3 install --upgrade -r requirements.txt
 ### Error: `OpenAI API key not found`
 
 Verifica que el archivo `.env` existe y contiene:
+
 ```bash
 OPENAI_API_KEY=tu-api-key-aqui
 ```
@@ -318,6 +256,7 @@ OPENAI_API_KEY=tu-api-key-aqui
 ### Error: `No matching distribution found for langchain-text-splitters>=2.0.0`
 
 Asegúrate de tener la versión correcta en `requirements.txt`:
+
 ```
 langchain-text-splitters>=0.3.0
 ```
@@ -325,6 +264,7 @@ langchain-text-splitters>=0.3.0
 ### Chunks duplicados en las respuestas
 
 Elimina y reindexa:
+
 ```bash
 rm -rf chroma_db/
 python3 src/build_index.py
@@ -356,10 +296,10 @@ Sí, las consultas y documentos se envían a OpenAI para generar embeddings y re
 
 El sistema responderá "No encuentro esta información en la documentación disponible" si no encuentra contexto relevante.
 
-
 ## 📄 Licencia
 
 Este proyecto es de uso educativo/interno.
 
 ## ❓ Decisiones técnicas
+
 - Luego de realizar pruebas con el embedding model text-embedding-3-small y text-embedding-3-large, los resultados no tenian mucha diferencia en si, y considerando que un FAQ no cambia de manera constante, preferi usar el modelo text-embedding-3-small
